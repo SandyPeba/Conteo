@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Clicks</title>
+</head>
+<body>
+    <button id="Boton">Haz click aquí</button>
+    <p id="resultado">Has hecho click 0 veces</p>
+
+    <script>
+    var contador = 0;
+    document.getElementById('Boton').addEventListener('click', function() {
+        contador++;
+        document.getElementById('resultado').textContent = 'Has hecho click ' + contador + ' veces';
+    });
+    </script>
+</body>
+</html>
